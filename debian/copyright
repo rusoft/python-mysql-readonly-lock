@@ -1,0 +1,23 @@
+This work was packaged for Ubuntu by:
+
+    Sergey Dryabzhinsky <sergey@rusoft.ru>
+    on Fri, 26 Sep 2014 12:13:00 +0400
+
+Upstream Author(s):
+
+    Sergey Dryabzhinsky <sergey@rusoft.ru>
+
+Copyright:
+
+    Read LICENSE file
+
+License:
+
+    GPLv2
+
+The Debian packaging is:
+
+    Copyright (C) 2016 Sergey Dryabzhinsky <sergey@rusoft.ru>
+
+    and is licensed under the GPL version 3,
+    see `/usr/share/common-licenses/GPL-3'.

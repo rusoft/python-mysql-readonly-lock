@@ -1,0 +1,136 @@
+mysql-hosting-backup (20181215.1-0rusoft11~trusty1) trusty; urgency=medium
+
+  * Update script, v0.5.0
+    - use argparser, new options:
+      --timeout to set unlock timeout
+    - fix cnf files list update
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sat, 15 Dec 2018 15:13:18 +0300
+
+mysql-hosting-backup (20180403-0rusoft11~trusty1) trusty; urgency=medium
+
+  * Fix python 2/3 deps
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sat, 15 Sep 2018 22:30:07 +0300
+
+mysql-hosting-backup (20180403-0rusoft10~trusty1) trusty; urgency=medium
+
+  * More deps, support python 3.2 / 3.5 / 3.6, fix python2 generic deps
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Mon, 04 Jun 2018 20:35:37 +0300
+
+mysql-hosting-backup (20180403-0rusoft9~trusty1) trusty; urgency=medium
+
+  * Create two packages for python2.7 and python3.4
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Tue, 03 Apr 2018 11:06:45 +0300
+
+mysql-hosting-backup (20180330-0rusoft9~trusty1) trusty; urgency=medium
+
+  * Update script, v0.4.3
+    - fix config load - use RawParser
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Fri, 30 Mar 2018 10:13:45 +0300
+
+mysql-hosting-backup (20180329-0rusoft9~trusty1) trusty; urgency=medium
+
+  * Update script, v0.4.2
+    - fix script - load site module
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Thu, 29 Mar 2018 08:24:47 +0300
+
+mysql-hosting-backup (20180328-0rusoft9~trusty1) trusty; urgency=medium
+
+  * Update script, v0.4.1
+    - support .cnf files as script params
+    - more checks on .cnf read
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Wed, 28 Mar 2018 02:34:46 +0300
+
+mysql-hosting-backup (20180317-0rusoft9~trusty1) trusty; urgency=medium
+
+  * Update script, v0.4.0
+    - switch to python3, use packaging module
+    - check server version to flush innodb
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sat, 17 Mar 2018 01:36:49 +0300
+
+mysql-hosting-backup (20171129-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script, v0.3.1
+    - fix var name
+    - add socket params support
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Wed, 29 Nov 2017 19:35:14 +0300
+
+mysql-hosting-backup (20171108.3-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script, v0.3.0
+    - add ping to keep connection alive
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Wed, 08 Nov 2017 10:19:40 +0300
+
+mysql-hosting-backup (20171108.2-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script, v0.2.2
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Wed, 08 Nov 2017 10:07:09 +0300
+
+mysql-hosting-backup (20171108.1-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script, v0.2.1
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Wed, 08 Nov 2017 09:59:42 +0300
+
+mysql-hosting-backup (20171108-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script, v0.2.0:
+    - try all cnf files
+    - lock and flush more options
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Wed, 08 Nov 2017 08:49:47 +0300
+
+mysql-hosting-backup (20171022.6-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script v0.1.2
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sun, 22 Oct 2017 21:32:16 +0300
+
+mysql-hosting-backup (20171022.5-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script v0.1.1
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sun, 22 Oct 2017 21:25:26 +0300
+
+mysql-hosting-backup (20171022.4-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script v0.1.0
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sun, 22 Oct 2017 21:21:08 +0300
+
+mysql-hosting-backup (20171022.3-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script v0.0.4
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sun, 22 Oct 2017 17:52:22 +0300
+
+mysql-hosting-backup (20171022.2-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script - v0.0.3
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sun, 22 Oct 2017 17:48:23 +0300
+
+mysql-hosting-backup (20171022.1-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Fix script
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Sun, 22 Oct 2017 17:43:42 +0300
+
+mysql-hosting-backup (20171022-0rusoft8~trusty1) trusty; urgency=medium
+
+  * Separate from mysql-hosting-configs
+  * Add alpha version of mysql lockdown script for backups
+    - new dep - python-pymysql
+  * Initial release
+
+ -- Sergey Dryabzhinsky <sergey@rusoft.ru>  Thu, 24 Dec 2015 17:08:36 +0300

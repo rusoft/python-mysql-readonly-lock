@@ -1,0 +1,64 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export MAKELEVEL=$(shell grep -c processor /proc/cpuinfo)
+
+configure: configure-stamp
+configure-stamp:
+	dh_testdir
+	touch configure-stamp
+
+build: build-stamp
+
+build-arch:
+# Do nothing
+
+build-indep:
+# Do nothing
+
+build-stamp: configure build-arch build-indep
+	dh_testdir
+	touch $@
+
+install: build install-stamp
+install-stamp:
+	dh_testdir
+	dh_testroot
+	dh_installdirs -A
+	dh_install
+	cd debian/python2-mysql-hosting-backup/usr/local/sbin && sed -e 's:usr/bin/env python:usr/bin/python2:g' -i mysql-readonly-lock.py
+	cd debian/python3-mysql-hosting-backup/usr/local/sbin && sed -e 's:usr/bin/env python:usr/bin/python3:g' -i mysql-readonly-lock.py
+	touch $@
+
+clean:
+	dh_testdir
+	if [ -f Makefile ]; then $(MAKE) distclean; fi
+	dh_clean
+
+# Build architecture-independent files here.
+binary-indep: install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -i
+	dh_installdocs -i
+	dh_installman -i
+	dh_link -i
+	dh_strip -i
+	dh_compress -i
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_shlibdeps -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
+
+# Build architecture-dependent files here.
+binary-arch: install
+# We have nothing to do by default.
+
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install configure
